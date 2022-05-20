@@ -13,75 +13,13 @@
       <section class="content">
         <h2>Blogs</h2>
         <div class="blog-content">
-          <a class="blog-card" href="/blogs/id">
-            <h4>Blog Title</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Quibusdam, voluptatibus delectus laboriosam quod ex, tempora,
-              similique rem officia id suscipit repudiandae distinctio! Ipsa
-              sapiente laudantium, sint culpa qui sit, vel aspernatur optio eius
-              adipisci officia, distinctio impedit modi exercitationem numquam
-              hic aut aliquam at consequatur blanditiis natus nam inventore?
-              Iusto?
-            </p>
-            <p><code>Author name</code></p>
+          <% blogs.forEach(blog => { %>
+          <a class="blog-card" href="/blogs/<%=blog.id%>">
+            <h4><%= blog.title %></h4>
+            <p><%= blog.body %></p>
+            <p><code><%=blog.author%></code></p>
           </a>
-
-          <a class="blog-card" href="/blogs/id">
-            <h4>Blog Title</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Quibusdam, voluptatibus delectus laboriosam quod ex, tempora,
-              similique rem officia id suscipit repudiandae distinctio! Ipsa
-              sapiente laudantium, sint culpa qui sit, vel aspernatur optio eius
-              adipisci officia, distinctio impedit modi exercitationem numquam
-              hic aut aliquam at consequatur blanditiis natus nam inventore?
-              Iusto?
-            </p>
-            <p><code>Author name</code></p>
-          </a>
-
-          <a class="blog-card" href="/blogs/id">
-            <h4>Blog Title</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Quibusdam, voluptatibus delectus laboriosam quod ex, tempora,
-              similique rem officia id suscipit repudiandae distinctio! Ipsa
-              sapiente laudantium, sint culpa qui sit, vel aspernatur optio eius
-              adipisci officia, distinctio impedit modi exercitationem numquam
-              hic aut aliquam at consequatur blanditiis natus nam inventore?
-              Iusto?
-            </p>
-            <p><code>Author name</code></p>
-          </a>
-
-          <a class="blog-card" href="/blogs/id">
-            <h4>Blog Title</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Quibusdam, voluptatibus delectus laboriosam quod ex, tempora,
-              similique rem officia id suscipit repudiandae distinctio! Ipsa
-              sapiente laudantium, sint culpa qui sit, vel aspernatur optio eius
-              adipisci officia, distinctio impedit modi exercitationem numquam
-              hic aut aliquam at consequatur blanditiis natus nam inventore?
-              Iusto?
-            </p>
-            <p><code>Author name</code></p>
-          </a>
-
-          <a class="blog-card" href="/blogs/id">
-            <h4>Blog Title</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Quibusdam, voluptatibus delectus laboriosam quod ex, tempora,
-              similique rem officia id suscipit repudiandae distinctio! Ipsa
-              sapiente laudantium, sint culpa qui sit, vel aspernatur optio eius
-              adipisci officia, distinctio impedit modi exercitationem numquam
-              hic aut aliquam at consequatur blanditiis natus nam inventore?
-              Iusto?
-            </p>
-            <p><code>Author name</code></p>
-          </a>
+          <% }) %>
         </div>
       </section>
     </div>
